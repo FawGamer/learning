@@ -1,0 +1,2 @@
+Antes de executar qualquer teste, verifiquei se ele tem as variaveis necessárias para seu ambiante.
+tendo em mente que tudo que você executar será de sua inteira responsabilidade por não ter estudado o codigo e feito os acertos necessários para seu ambiante.
