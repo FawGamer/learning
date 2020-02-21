@@ -12,3 +12,8 @@ case $typeinstall in
 ; 
 esac
 }
+
+while [["$typeinstall" = 1]]
+do
+
+done
