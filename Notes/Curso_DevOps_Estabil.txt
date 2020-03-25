@@ -5,8 +5,35 @@
 > Modulo 03
     Conceitos Basicos de DevOps
         Questionário
-        1. Automation
-        2. 
-        3. 
-        4. 
-        5. 
+        1. 
+            Automation
+        2. Quais são as 3 Maneiras?
+            A.  Fluxo
+                FeedBack
+                Aprendizado Continuo e Experimentação
+        3. Qual das opções não é uma prática comum do XP (Extreme Programming)?
+            C. Blasmeless
+        4. Qual ferramenta permite avaliar o fluxo de entrega de valor?
+            B.  Mapa de Fluxo de Valor
+        5. Qual não é um valor do manifesto Agil?
+            C.
+        6. Qual o principio do Manifesto Agil?
+            C. 
+        7. 
+            D. 
+
+> Modulo 04
+    1. A)
+    2. C)
+    3. B)
+    4. D) 
+    5. C)
+    6. C)
+    7. D)
+    8. C)
+    9. D)
+    10. A)
+
+> Modulo 05
+
+> Modulo 06
