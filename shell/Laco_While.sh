@@ -5,4 +5,9 @@ while [[ "$_INPUT_STRING" != "tchau" ]]
 do
 echo "Você deseja ficar aqui? "
 read _INPUT_STRING
-echo "Voce disse Tchau"
+
+if [[ $_INPUT_STRING = 'tchau']]; then
+    echo "Voce disse não Tchau"
+    else
+    echo "Voce ainda deseja ficar aqui"
+    fi
