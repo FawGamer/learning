@@ -1,0 +1,74 @@
+Tranning
+
+
+0. Ocultar a Presença - VPN/Tor (ProtoVPN)
+    Ocutar presença - Navegar de modo anonimo:
+
+    Principal Ferramenta: TOP Browser
+    Tor = Nunca redimensionar a janela.
+
+    WhatIsMyIP.com
+    Youtube: Hackville
+
+    Mac Address
+    Visualiza o MAC ADDRESS ATUAL: macchanger -s [interface]
+    Altera o MAC ADDRESS: macchanger -r [interface] 
+    Restaura o MAC ADDRESS original: macchanger -p [Interface]
+
+    Cuidado DNS Leak - dnsleaktest.com
+    Proxy - Não usar
+
+1. Footprinting
+    Principal Ferramenta: Site SHODAN | Censys
+    Dica: Use Filtros
+    Servidor: Serviço e Versão
+
+    ping [Site]
+    abre o Shodan.io / Censys.io
+    Adicionar o IP do ping
+    Porta | Serviço | Versão
+    Porta
+
+    
+2. Scanning
+Principal ferramenta: nmap
+-> Baixar para teste as VM's Metasploitable 2 e Win Xp SP3
+
+# nmap [ip alvo]
+Aparece o serviços vulneralveis
+# nmap -A [ip alvo]
+
+NMAP NSE - Usando para verificar se existe IDS/IPS
+# nmap -p80 --script http-waf-detect [ip alvo]
+
+
+3. Exploração do Alvo
+
+
+Site:   Exploit Database
+        0day.today
+
+Hack this site.org
+
+Principal ferramenta - SQLMAP (sqlmap.or)
+Usada para SQL Injection
+Dica: ir sempre na documentação oficial da ferramenta.
+https://wwww.[url].*.*/[programa web].php?[parametro]
+# sqlmap -u [site alvo] -dbs
+# sqlmap -u [site alvo] -dbs -D -acuart -T users -C name,pass,
+
+
+acunetix -> site para teste
+testephp.vulnweb.com
+
+
+4.
+
+5.
+
+6.
+
+7.
+
+8.
+
