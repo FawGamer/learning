@@ -1,5 +1,15 @@
-Tranning
+Tranning - Curso de Hacker Etico
+Com Anderson Peixoto Moreira
+Whatsapp: (11) 9 61702244
 
+Teste de Invasão X Analise de Vulnerabilidades
+Bug Bounty Program - 
+
+Livros
+    Future Crimes - 
+    Teste de Invasão - Uma Introdução prática ao Hacking - Novatec
+
+Metodologia:
 
 0. Ocultar a Presença - VPN/Tor (ProtoVPN)
     Ocutar presença - Navegar de modo anonimo:
@@ -88,7 +98,7 @@ Para puxar os Dados de senha e usuário de uma Database
 # sqlmap -u [site alvo] -dbs -D -acuart -T users -C name,pass,uname,email --dump
 
 Aplicação - havij
-Coloca o url
+Coloca o url do site para identificar o DB.
 
 
 acunetix -> site para teste
