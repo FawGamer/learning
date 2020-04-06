@@ -1,0 +1,21 @@
+Escola do Amanhã - Live
+Semana do Zero ao Big Data
+Com Renato Brandão
+
+> Aula 01
+    Big data da o norte de como lidar com uma grande quantidade de dados.
+    Por que Big Data e o que eu ganho com isso?
+    Valor salario junior R$ 5.000,00
+
+    Por que esse evento, e como isso pode ajudar?
+    First Mark Big Data Landscape 2017
+
+    A Chave de Prata
+        Abrindo as portas do Big Data
+    Como ser mais rapido:
+    -processamento distribuido (Cluster)
+    -Tolerancia a Falhas (HA)
+        
+        Map & Reduce    
+        Input > Map > Sort/Shuffle > Reduce > Output
+        
