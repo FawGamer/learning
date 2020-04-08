@@ -18,4 +18,20 @@ Com Renato Brandão
         
         Map & Reduce    
         Input > Map > Sort/Shuffle > Reduce > Output
-        
+
+        São parecidos:
+        RDD 
+        Dataframe
+
+> Aula 02
+
+
+
+
+
+
+
+
+
+    
+> Aula 03
