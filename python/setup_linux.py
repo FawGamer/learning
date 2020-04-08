@@ -18,11 +18,11 @@ nmcli con up $INTERFECE
 ip a
 
 print("Instalando pacote padrão de sistema")
-yum -y upgrade
-yum -y update
-yum -y install install gcc unzip wget mesa-libGL mesa-libGL-devel ntfs-3g.x86_64 nss dkms git dnf snapd vim ansible libselinux-python vlc smplayer ffmpeg HandBrake-{gui,cli} libdvdcss gstreamer{,1}-plugins-ugly gstreamer-plugins-bad-nonfree gstreamer1-plugins-bad-freeworld libde265 x265
-yum -y install exfat-utils fuse-exfat
-yum -y install epel-release
-yum -y groupinstall "X Window system"
-yum -y install lightdm
-yum -y install cinnamon
+apt-get -y upgrade
+apt-get -y update
+apt-get -y install install gcc unzip wget mesa-libGL mesa-libGL-devel ntfs-3g.x86_64 nss dkms git dnf snapd vim ansible libselinux-python vlc smplayer ffmpeg HandBrake-{gui,cli} libdvdcss gstreamer{,1}-plugins-ugly gstreamer-plugins-bad-nonfree gstreamer1-plugins-bad-freeworld libde265 x265
+apt-get -y install exfat-utils fuse-exfat
+apt-get -y install epel-release
+apt-get -y groupinstall "X Window system"
+apt-get -y install lightdm
+apt-get -y install cinnamon

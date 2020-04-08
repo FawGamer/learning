@@ -10,4 +10,4 @@ tnetworking1= sp.run('nmcli connection modify ', %networkcard, 'ipv4.method manu
 
 tnetworking2= sp.run('nmcli connection up', %networkcard)
 
-installer1= sp.run('yum -y install ntfs-3g.x86_64  nss dkms git dnf snapd vim ansible libselinux-python vlc smplayer ffmpeg HandBrake-{gui,cli} libdvdcss gstreamer{,1}-plugins-ugly gstreamer-plugins-bad-nonfree gstreamer1-plugins-bad-freeworld')
+installer1= sp.run('apt-get -y install ntfs-3g.x86_64  nss dkms git dnf snapd vim ansible libselinux-python vlc smplayer ffmpeg HandBrake-{gui,cli} libdvdcss gstreamer{,1}-plugins-ugly gstreamer-plugins-bad-nonfree gstreamer1-plugins-bad-freeworld')
