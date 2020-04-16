@@ -1,0 +1,91 @@
+Modelos de implantação em nuvem
+    Nuvem pública
+        Nesse caso, você não tem nenhum hardware local que precisa ser gerenciado ou atualizado: tudo é executado no hardware do provedor de nuvem. 
+        Em alguns casos, você pode reduzir custos adicionais por meio do compartilhamento de recursos de computação com outros usuários da nuvem.
+
+        Vantagens
+        -Agilidade/alta escalabilidade – você não precisa comprar um novo servidor para dimensionar
+        -Preço pago conforme o uso – você paga apenas pelo que usa, sem custos de CapEx
+        -Você não é responsável pela manutenção nem pelas atualizações de hardware
+        -Mínimo de conhecimento técnico para configurar e usar – você pode aproveitar as habilidades e a competência do provedor de nuvem
+         para garantir que as cargas de trabalho estejam sempre seguras, protegidas e altamente disponíveis
+
+        Desvantagens
+        -Nem todos os cenários são adequados para a nuvem pública. Aqui estão algumas desvantagens a serem consideradas:
+        -Pode haver requisitos de segurança específicos que não podem ser atendidos com o uso da nuvem pública
+        -Pode haver políticas governamentais, padrões do setor ou requisitos legais que as nuvens públicas não podem cumprir
+        -Você não é o proprietário do hardware nem dos serviços e não pode gerenciá-los como deseja
+        -Requisitos de negócios exclusivos, como a necessidade de manter um aplicativo herdado, podem ser difíceis de serem atendidos
+
+    Nuvem privada
+        Em uma nuvem privada, você cria um ambiente de nuvem em seu próprio datacenter e fornece acesso de autoatendimento a recursos 
+        de computação para os usuários da organização.
+        
+        Vantagens
+            Essa abordagem apresenta várias vantagens:
+                Você pode garantir que a configuração é compatível com qualquer cenário ou aplicativo herdado
+                Você tem controle (e responsabilidade) sobre a segurança
+                As nuvens privadas podem atender a requisitos rigorosos de segurança, de conformidade ou legais
+
+        Desvantagens
+                Algumas razões pelas quais as equipes deixam de usar a nuvem privada são:
+                Há alguns custos iniciais de CapEx e você precisa comprar o hardware para inicialização e manutenção
+                A propriedade do equipamento limita a agilidade. Para dimensionar, você precisa comprar, instalar e configurar o novo hardware
+                As nuvens privadas exigem competências e habilidades de TI que são difíceis de encontrar
+
+    Nuvem híbrida
+        combina nuvens públicas e privadas, permitindo que você execute seus aplicativos na localização mais apropriada. Por exemplo, 
+        você poderia hospedar um site na nuvem pública e vinculá-lo a um banco de dados altamente seguro hospedado na nuvem 
+        privada (ou no datacenter local).
+
+        Vantagens
+            Algumas vantagens de uma nuvem híbrida são:
+                Você pode manter qualquer sistema em execução e acessível que use um hardware ou um sistema operacional desatualizado
+                Você tem flexibilidade em relação ao que executa localmente ou na nuvem
+                Você poderá usufruir das economias de escala dos provedores de nuvem pública para serviços e recursos quando eles forem mais baratos e, em seguida, complementar com seu próprio equipamento quando não forem
+                Você pode usar seu próprio equipamento para atender a cenários de segurança, conformidade ou herdados nos quais precisa controlar totalmente o ambiente
+
+        Desvantagens
+            Algumas preocupações que você deverá ter em mente são:
+                Ela pode ser mais cara do que selecionar um modelo de implantação, pois envolve um certo custo de CapEx antecipado
+                Ela pode ser mais complicada de configurar e gerenciar
+                
+                
+    Tipos de serviços de nuvem
+        IaaS versus SaaS versus PaaS
+
+            IaaS (infraestrutura como serviço)
+                Ela tem o objetivo de fornecer a você controle total sobre o hardware que executa seu aplicativo, como os servidores de infraestrutura
+                de TI e as VMs (máquinas virtuais), o armazenamento e os sistemas operacionais.
+
+                A IaaS geralmente é usada nos seguintes cenários:
+                    -Cargas de trabalho em migração. Normalmente, os recursos de IaaS são gerenciados da mesma forma que a infraestrutura local e fornecem
+                     um caminho de migração fácil para mover aplicativos existentes para a nuvem.
+        
+                    -Teste e desenvolvimento. As equipes podem configurar e desmontar rapidamente ambientes de teste e desenvolvimento, entregando novos
+                     aplicativos ao mercado com mais rapidez. A IaaS torna o desenvolvimento em escala e os ambientes de teste mais rápidos e econômicos.
+        
+                    -Armazenamento, backup e recuperação. As organizações evitam o gasto de capital e a complexidade do gerenciamento de armazenamento, que
+                     normalmente exige uma equipe experiente para gerenciar dados e atender aos requisitos legais e de conformidade. A IaaS é útil para
+                     gerenciar demandas imprevisíveis e necessidades de armazenamento com crescimento constante. A IaaS também pode simplificar o 
+                     planejamento e o gerenciamento de sistemas de backup e recuperação.
+
+            PaaS (plataforma como serviço)
+                O PaaS fornece um ambiente para criação, teste e implantação de aplicativos de software. A meta da PaaS é ajudar você a criar um aplicativo
+                rapidamente sem a necessidade de gerenciar a infraestrutura subjacente. Por exemplo, ao implantar um aplicativo Web usando o PaaS, você não
+                precisa instalar um sistema operacional, um servidor Web e nem mesmo as atualizações do sistema.
+
+                O PaaS geralmente é usado nos seguintes cenários:
+                    -Estrutura de desenvolvimento. O PaaS fornece uma estrutura que os desenvolvedores podem usar como base para desenvolver ou personalizar 
+                     aplicativos baseados em nuvem. Assim como uma macro do Microsoft Excel, o PaaS permite que os desenvolvedores criem aplicativos, usando 
+                     componentes internos de software. São incluídos recursos de nuvem, como escalabilidade, alta disponibilidade e a funcionalidade de
+                     multilocatário, reduzindo a quantidade de codificação que os desenvolvedores precisam realizar.
+        
+                    -Análise ou business intelligence. As ferramentas fornecidas como serviço com o PaaS permitem que as organizações analisem e minerem 
+                     seus dados. Elas podem encontrar insights e padrões e prever resultados para melhorar as decisões de negócios, como previsão, design 
+                     de produto e retornos sobre o investimento.
+
+            SaaS (software como serviço)
+                SaaS é um software que é hospedado e gerenciado centralmente para o cliente final. Geralmente, ele se baseia em uma arquitetura em que uma
+                versão do aplicativo é usada para todos os clientes e licenciada por meio de uma assinatura mensal ou anual. Office 365, Skype e Dynamics
+                CRM Online são exemplos perfeitos de software SaaS.
