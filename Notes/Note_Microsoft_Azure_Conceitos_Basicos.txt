@@ -1,3 +1,18 @@
+Microsoft Azure
+    O Azure é a plataforma de computação em nuvem da Microsoft. O Azure fornece mais de 100 serviços que possibilitam que você faça tudo,
+    da execução dos aplicativos existentes em máquinas virtuais à exploração de novos paradigmas de software, como bots inteligentes e realidade mista.
+
+    Estes são apenas alguns tipos de serviço que você encontrará no Azure:
+
+    Serviços de computação, como VMs e contêineres, que podem executar seus aplicativos
+    Serviços de banco de dados que fornecem opções relacionais e NoSQL
+    Serviços de identidade que ajudam você a autenticar-se e proteger os usuários
+    Serviços de rede que conectam seu datacenter à nuvem, fornecem alta disponibilidade ou hospedam seu domínio DNS
+    Soluções de armazenamento que podem acomodar enormes quantidades de dados estruturados e não estruturados
+    Os serviços de Inteligência Artificial e aprendizado de máquina podem analisar dados, textos, imagens, compreender 
+    fala e fazer previsões, usando dados, mudando o mundo da agricultura, do setor de saúde e muito mais.
+    E muito mais!
+
 Modelos de implantação em nuvem
     Nuvem pública
         Nesse caso, você não tem nenhum hardware local que precisa ser gerenciado ou atualizado: tudo é executado no hardware do provedor de nuvem. 
@@ -89,3 +104,15 @@ Modelos de implantação em nuvem
                 SaaS é um software que é hospedado e gerenciado centralmente para o cliente final. Geralmente, ele se baseia em uma arquitetura em que uma
                 versão do aplicativo é usada para todos os clientes e licenciada por meio de uma assinatura mensal ou anual. Office 365, Skype e Dynamics
                 CRM Online são exemplos perfeitos de software SaaS.
+
+Resumo
+    Neste módulo, você aprendeu sobre a computação em nuvem, o que ela é e quais são suas características principais.
+    Aqui estão alguns pontos abordados.
+
+    Diferentes tipos de modelos de nuvem que estão disponíveis e as considerações sobre o uso desses diferentes modelos.
+    Alguns dos principais termos e conceitos, como alta disponibilidade, agilidade, elasticidade, tolerância a falhas e CapEx versus OpEx.
+    Os diferentes serviços de nuvem disponíveis, os benefícios de usar os diferentes tipos e as responsabilidades de gerenciamento de cada
+    tipo de serviço.
+    Os modelos de nuvem, como pública, privada e híbrida, e quais são as principais características de cada modelo.
+    Os diferentes tipos de serviço de nuvem disponíveis: IaaS, PaaS e SaaS; quais são as principais características de cada serviço e quando
+    você deve escolher um em vez de outro.
