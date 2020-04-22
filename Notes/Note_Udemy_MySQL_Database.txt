@@ -1,0 +1,13 @@
+Aula #1
+create database banco;
+use banco;
+drop database banco;
+
+Perguntas
+1. c
+2. c 
+3. D 
+4. B 
+5. C 
+6. A 
+7. D 

@@ -24,10 +24,9 @@ Módulo 03 / ► Avaliação Módulo III
 
 Módulo 04 / ► Avaliação Módulo IV
     Qual o significado da sigla TLS?
-        b. Transport Layer Security
+        Transport Layer Security
     Em qual protocolo o TLS foi baseado?
-        c. SSL
+        SSL
     É possível realizar uma interoperabilidade entre os protocolos SSL e TLS?
         a. Não, os 2 protocolos são diferentes
-        b. Sim, pois o TLS foi baseado no SSL
         c. Não, os 2 protocolos estão em camadas diferentes
