@@ -1,2 +1,3 @@
 Janeiro de 2020 - Udemy - Introdução a Python
 Fevereiro de 2020 - Microsoft - Azure Fundamentals - AZ-900
+Abril de 2020 - Estabilis - DevOps Foundation
