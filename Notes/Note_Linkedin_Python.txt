@@ -1,0 +1,5 @@
+Linkedin - Python
+
+O que você deve saber:
+    Logica de programação
+
