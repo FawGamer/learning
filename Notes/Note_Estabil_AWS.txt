@@ -1,14 +1,14 @@
 AWS na Prática
 
-Modulo 01
+> Modulo 01 - Infraestrutura Global AWS
 
-Modulo 02
+> Modulo 02 - Fundamentos de Segurança na AWS
 
-Modulo 03
+> Modulo 03 - Networking na AWS
 
-Modulo 04
+> Modulo 04 - Elastic Compute Cloud (EC2)
 
-Modulo 05
+> Modulo 05 - Armazenamento - EBS e S3
 
-Modulo 06
-
+> Modulo 06 - Relacional Database Service (RDS)
+    
