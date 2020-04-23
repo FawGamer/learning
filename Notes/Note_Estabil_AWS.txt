@@ -1,14 +1,106 @@
 AWS na Prática
 
 > Modulo 01 - Infraestrutura Global AWS
+    Regioes
+
+    Zona de Disponibilidade
+
+    Pontos de Presença
+
+    Escopo de Serviços
+
+    Questionario
+    1. B
+    2. B
+    3. B
+    4. A
+    5. C
+    6. Pelo menos 3 Datacenter
+    7. D
+    8. A
+    9. é recomendado implementar o ambiente em varios AZ
+    10. B
+    11. Não posso usar EBS (Discos) de uma AZ em instancias de outra AZ
+    12. O mapeamentp de AZ's é diferente para todas as contas AWS
+    13. A,B,D 
+    14. B
+    15. O Serviço S3 Transfer Acceleration não usa o Backbone da AWS para otimizar a velocidade
+    16. Serviços que tem escopo de regiao:ELB, Security Groups, EIP (Elastic IP) e S3
+    17. F, H, J e K
+    18. O serviços de escopo global são: Router53, CloudFront and WAF
 
 > Modulo 02 - Fundamentos de Segurança na AWS
+    Modelo de Responsabilidade Compartilhada
+        Matriz de responsabilidade que menciona quem é responsavel.
+        AWS
+            -Hardware (Componente, discos são triturados antes de serem descartados)
+            -Rede (Comunicação entre a zonas de disponibilidade)
+            -Software (Hypervisor)
+            -Data Center (Acesso e segurança de perimetro)
+            -Serviços gerenciados (RDS com SQL Server, não temos acesso ao OS e a aplicação)
 
+        Cliente
+            -Sistema Operacional e serviços que rodam nele.
+            -Rede (LAN e WAN)
+            -Firewall
+            -Criptografia e Backup de dados
+
+    Controle de Identidade - IAM (Identify And Access Management) 
+        3 tipos de entidades
+            . Group
+            . Policies
+            . Users
+        Boas praticas:
+            1. NUNCA use a conta ROOT!
+            2. Crie usuários individuais, nada de usuários compartilhados
+            3. Use o conceito de menor privilégio
+            4. Conceda permissão para grupos, não usuários.
+            5. Configure uma politica de senhas
+            6. Habilite o MFA em toras as contas administrativas
+            7. Para aplicações que rodam em EC2, use Roles
+            8. Rotacione suas credenciais regularmente
+            9. Remova credenciais desnecessárias
+            10. Use o CloudTrail paramanter historico de atividades em sua conta
+
+        Roles
+            -Acesso temporário
+            -Permissão para serviços EC2, RDS, S3 e Dynamodb
+
+    Access For Course 
+        AWS Access Account
+            User: awsraphael
+            Senha: TMjn}X!Bj9qQ
+
+        AWS Commit
+            User: awscommit
+            Senha: [}$mUNXh3mzu
+
+        AWS Database
+            User: awsdbadm
+            Senha: x0zZ0[UY1Hu%
+    Questions
+        01. B 
+        02. A 
+        03. A 
+        04. B
+        05. B
+        06. As instancias EC2 não possuem backup-snapshot diário.
+        07. B
+        08. B
+        09. A
+        10. B 
+        11. Patch das instancias Linux EC2 é de responsabilidade do cliente.
+        12. B 
+        13. A
+            
 > Modulo 03 - Networking na AWS
+    VPC - Virtual Private Cloud
+    
+
 
 > Modulo 04 - Elastic Compute Cloud (EC2)
 
 > Modulo 05 - Armazenamento - EBS e S3
 
 > Modulo 06 - Relacional Database Service (RDS)
-    
+
