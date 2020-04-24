@@ -1,0 +1,4 @@
+PS1='>_'
+
+Para retirar o tempo do SUDO
+Variavel: TMAUT

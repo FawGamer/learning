@@ -1,0 +1,2 @@
+Expressões Regulares, AWK, SED e Wildcards
+para saber se é root: id -u
