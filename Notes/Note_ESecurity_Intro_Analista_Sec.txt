@@ -1,4 +1,4 @@
-Módulo 01 / ► Avaliação do Módulo I
+> Módulo 01 / ► Avaliação do Módulo I
     Quais são os 5 pilares da Segurança da Informação citadas nesse curso?
         b. Integridade, Autenticidade, Não Repúdio, Disponibilidade e Confidencialidade
     Podemos dizer que a politica de Segurança da Informação é necessário apenas para empresas de grande porte?
@@ -6,7 +6,7 @@ Módulo 01 / ► Avaliação do Módulo I
     O que significa SGSI?
         c. Sistema de Gestão de Segurança da Informação
 
-Módulo 02 / ► Avaliação do Módulo II
+> Módulo 02 / ► Avaliação do Módulo II
     O que significa a Sigla TCP?
         c. Transmission Control Protocol
     O protocolo UDP padrão é confiável para transmissão de arquivos?
@@ -14,7 +14,7 @@ Módulo 02 / ► Avaliação do Módulo II
     Qual a real função do protocolo ICMP?
         a. O ICMP é um protocolo de diagnóstico de rede
 
-Módulo 03 / ► Avaliação Módulo III    
+> Módulo 03 / ► Avaliação Módulo III    
     Qual o Significado da siga NAT?
         b. Network Address Translation
     O Kali linux é uma distribuição baseada em que outra distribuição?
@@ -22,11 +22,18 @@ Módulo 03 / ► Avaliação Módulo III
     Está certo afirmar que masquerading consiste em reescrever, utilizando se de uma tabela criptografada, os endereços IP de origem de um pacote que passam por um router ou firewall de maneira que um computador de uma rede interna tenha acesso ao exterior ou Rede Mundial de Computadores (internet)?
         a. Não
 
-Módulo 04 / ► Avaliação Módulo IV
+> Módulo 04 / ► Avaliação Módulo IV
     Qual o significado da sigla TLS?
         Transport Layer Security
     Em qual protocolo o TLS foi baseado?
         SSL
     É possível realizar uma interoperabilidade entre os protocolos SSL e TLS?
-        a. Não, os 2 protocolos são diferentes
-        c. Não, os 2 protocolos estão em camadas diferentes
+        Não, os 2 protocolos são diferentes
+
+> Módulo 05 
+    IDS
+    Sistema que detectca Intrusões 
+    
+    IPS
+    Sistema que Previne Intrusões
+    
