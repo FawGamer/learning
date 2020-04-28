@@ -1,0 +1,66 @@
+AULA 01
+Instalar o Wordpress no Azure
+RMAz
+User: acesso
+senha: ggxr9Sv)Sd2OhY1UFl
+
+
+
+AULA 02
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Set-ExecutionPolicy unrestricted
+PSSecurityException
+Get-ExecutionPolicy -List
+Import-Module Az.Accounts
+Connect-AzAccount
+New-AzVM `
+>> -ResourceGroupName "VMrecursos" `
+>> -Name "VMlinux" `
+>> -Image "UbuntuLTS" `
+
+user: acesso
+senha: K@ira1206
+
+    ResourceGroupName        : VMrecursos
+    Id                       : /subscriptions/58cd60bc-a5e2-478e-89b9-425b39f44554/resourceGroups/VMrecursos/providers/Micr
+    osoft.Compute/virtualMachines/VMlinux1
+    VmId                     : 66aac058-fd4b-4839-97b8-b9bb8ff3f11a
+    Name                     : VMlinux1
+    Type                     : Microsoft.Compute/virtualMachines
+    Location                 : eastus
+    Tags                     : {}
+    HardwareProfile          : {VmSize}
+    NetworkProfile           : {NetworkInterfaces}
+    OSProfile                : {ComputerName, AdminUsername, LinuxConfiguration, Secrets, AllowExtensionOperations,
+    RequireGuestProvisionSignal}
+    ProvisioningState        : Succeeded
+    StorageProfile           : {ImageReference, OsDisk, DataDisks}
+    FullyQualifiedDomainName : vmlinux1-be00e8.eastus.cloudapp.azure.com
+
+Exercicio
+New-AzVM `
+-ResourceGroupName "VMrecursos" `
+-Name "VMlinuxPequena" `
+-Image "UbuntuLTS" `
+-Size "Standard_B1ls" `
+
+ResourceGroupName        : VMrecursos
+Id                       : /subscriptions/58cd60bc-a5e2-478e-89b9-425b39f44554/resourceGroups/VMrecursos/providers/Micr
+osoft.Compute/virtualMachines/VMlinuxPequena
+VmId                     : 6d02f605-402d-4262-9750-1d034127ba8a
+Name                     : VMlinuxPequena
+Type                     : Microsoft.Compute/virtualMachines
+Location                 : eastus
+Tags                     : {}
+HardwareProfile          : {VmSize}
+NetworkProfile           : {NetworkInterfaces}
+OSProfile                : {ComputerName, AdminUsername, LinuxConfiguration, Secrets, AllowExtensionOperations,
+RequireGuestProvisionSignal}
+ProvisioningState        : Succeeded
+StorageProfile           : {ImageReference, OsDisk, DataDisks}
+FullyQualifiedDomainName : vmlinuxpequena-3c30ba.eastus.cloudapp.azure.com
+
+
+Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
+Disco de 33 Gb
+Free 16
