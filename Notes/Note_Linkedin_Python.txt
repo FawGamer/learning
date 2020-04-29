@@ -3,3 +3,57 @@ Linkedin - Python
 O que você deve saber:
     Logica de programação
 
+Tipos de Variaveis
+String - é usado a "str(valor)" para indicar que será tratado como texto.
+Float - Float é a varivale que trata todas as expressões numericas com decimais ou numeros quebrados.
+Bool - Boleano é a variavel que trata entre falso e verdadeiro com "true" e "false", são usados em momentos de decisão.
+Complex
+
+
+Funções
+Começa sempre com "def" e termina com ela sendo chamada logo em seguida:
+Exemplo 1:
+    def func1():
+        print ("Eu sou uma função")
+    func1()
+
+Exemplo 2:
+# função que recebe argumentos
+    def func2(arg1,arg2):
+        print(arg1+" "+arg2)
+
+    func2("Raphael" , "Maria")
+
+Exemplo 3
+# função que retorna um valor
+    def cubo(x):
+        return x * x* x
+    f = cubo(3)
+    print(f)
+    print(cubo(2))
+
+> Estrutura condicionais
+    def condicionais():
+        x, y = 10, 100
+        if(x < y):
+            print("x é menor do que y")
+        elif (x == y):
+            print("x é igual a y")
+        else:
+            print("x é maior que y")
+
+    condicionais()
+
+Ficar atento, a ultima linha sempre deve esta rente ao inicio da função.
+
+> Loop While
+
+Exemplo
+    def loopwhile():
+        x = 0
+        while (x < 5):
+            print(x)
+            x = x + 1
+        
+    loopwhile()
+

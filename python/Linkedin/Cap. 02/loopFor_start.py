@@ -3,28 +3,25 @@
 #
 
 # Definindo um LOOP FOR
-def loopFor():
+def loopfor():
     for x in range(5,10):
         print(x)
-
-loopFor()
+loopfor()
 
 # Usando um LOOP FOR em uma coleção
-def loopArray ():
+def looparray():
     dias = ["seg", "ter", "qua", "qui", "sex", "sab", "dom"]
     for d in dias:
-        print (d)
+        print(d)
+looparray()
 
-loopArray()
-
-
-# Usando BREAK e CONTINUE
+# Usando Break e Continue
 
 
-# Usando a função enumerate, paara buscar valoeres e seus índices
-def loopEnum ():
+
+# Usando enumerate, para buscar valores e seus indices
+def loopEnum():
     dias = ["seg", "ter", "qua", "qui", "sex", "sab", "dom"]
-    for i, d in enumerate(dias):
-        print (i, d)
-
+    for i,d in enumerate(dias):
+        print(i,d)
 loopEnum()
