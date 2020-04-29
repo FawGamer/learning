@@ -20,6 +20,7 @@ New-AzVM `
 
 user: acesso
 senha: K@ira1206
+root - teste
 
     ResourceGroupName        : VMrecursos
     Id                       : /subscriptions/58cd60bc-a5e2-478e-89b9-425b39f44554/resourceGroups/VMrecursos/providers/Micr
@@ -64,3 +65,6 @@ FullyQualifiedDomainName : vmlinuxpequena-3c30ba.eastus.cloudapp.azure.com
 Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
 Disco de 33 Gb
 Free 16
+---
+Paineis
+
