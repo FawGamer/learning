@@ -1,0 +1,13 @@
+Java Script
+    é Interpretado
+    é Case sensitive
+
+Tipo de variaveis
+    Booleano    true our false
+    Inteiro     1, 2, 3
+    Flutuante   1.2, 3.5, 15.8
+    Caracter    a, v, q,
+    String      letras com espaços
+
+
+

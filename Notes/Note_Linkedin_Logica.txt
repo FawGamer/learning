@@ -1,0 +1,6 @@
+Java Script
+    é Interpretado
+    é Case sensitive
+
+
+
