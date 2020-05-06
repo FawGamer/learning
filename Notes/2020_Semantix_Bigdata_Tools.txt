@@ -1,0 +1,18 @@
+Webnar Ferramentas de Big Data
+Ministrado por Rodrigo Augusto de Souza (rodrigo.augusto@semantix.com.br)
+Empresa Semantix
+
+Baixa os arquivos presentes no E-mail
+
+> Aula 01 - Hadoop
+Criar uma pasta CLUSTER
+E jogar o arquivo dentro
+rodar "docker-compose -f doc.yml up -d
+
+
+
+docker-compose up -d 
+docker-compose down
+
+
+> Aula 02 - Hive
