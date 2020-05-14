@@ -37,3 +37,12 @@
     IPS
     Sistema que Previne Intrusões
     
+    Qual o significado da sigla IDS?
+        Intrusion Detection System
+
+    A firmação abaixo é verdadeira?
+    O Switched Port Analyzer consegue espelhar uma ou mais portas do Switch
+        Sim
+
+    O que é o Snort?
+        É um NIDS

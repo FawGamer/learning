@@ -1,0 +1,10 @@
+Docker: Ferramenta essencial para Desenvolvedores
+
+> Modulo 01: Contéudo do Curso
+    Apresentação de professores.
+    Disponibilização de matérial e repósitorio no GitHub
+    Boas Praticas para solicitar assistência.
+
+> Modulo 02: Conceitos
+    O que é Docker?
+        
