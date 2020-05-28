@@ -1,0 +1,14 @@
+Curso: Azure Administrator Associate - AZ 103/104
+Instrutor: Tio Inaldo
+Plataforma: Udemy
+
+Powershell
+
+New-AzVm `
+    -ResourceGroupName "CrmTestingResource
+
+Azure CLI
+az vm restart -g MyResourceGroup -n MyVm
+
+Recursos
+Resource Manager
