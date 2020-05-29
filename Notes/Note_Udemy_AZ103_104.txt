@@ -14,4 +14,7 @@ Recursos
 Resource Manager
 
 TAG
-az 
+az tag create --name Equipe
+az tag add-value --name Equipe --value dev01
+Remove-AzureRmTag -Name "TAG"
+
