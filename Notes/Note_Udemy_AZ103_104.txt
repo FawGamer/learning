@@ -12,3 +12,6 @@ az vm restart -g MyResourceGroup -n MyVm
 
 Recursos
 Resource Manager
+
+TAG
+az 
