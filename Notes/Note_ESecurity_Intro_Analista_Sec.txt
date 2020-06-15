@@ -46,3 +46,11 @@
 
     O que é o Snort?
         É um NIDS
+
+> Módulo 06
+    IDS
+
+    IPS
+
+    Questionarioa:
+        
