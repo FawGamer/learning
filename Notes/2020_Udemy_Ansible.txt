@@ -1,0 +1,75 @@
+> 1. Apresentação
+
+> 2. Introdução a Ansible
+    Ansible é uma forma de comunicação superlumica.
+    Solução OpenSource da Red Hat desenvolvida por Michael DeHaan
+        Gerenciamento de Mudança
+            Idempotente
+            System State
+            Versão de aplicação
+            Alertas de mudanças
+
+        Provisionamento
+            Configuração
+            Instalação
+            Preparação
+            Alteração do System State
+
+        Automação
+            Execução de tarefas de forma automatica
+            Ordenação de tarefas (tasks)
+            Realizar decisoes
+            Ad-hoc tasks
+
+        Orquestração
+            Multiplos servidores
+            Multiplas aplicações
+            Diferentes tarefas
+            Ambiente hibrido
+
+    Ferramentas de Automatização mais usadas/conhecidas
+    CHEF
+    CFEngine
+    SaltStack
+    Puppet Labs
+    Ansible
+
+    Porque Ansible?
+        -Ferramenta OpenSource
+        -Simples (YAML - chave:valor)
+        -Baixa curva de aprendizado
+        -Agentless (sem agentes - 100% limpa)
+        -Facil de Ler (YAML)
+    
+    Ansible Architecture
+        Inventory
+        API 
+        Modules
+        Plugins
+
+    Como ele funciona?
+        Ansible foi desenvolvido em Python 2 como versão padrão.
+        é nativo em maquinas Linux, mas é possivel executar ele em maquina de outra plataformas.
+        Procura sempre o interpretador /usr/bin/Python
+         Variavel: ansible_python_interpreter
+        Utiliza o Open SSH para comunicação
+            Usuário + Senha
+            Chave SSH
+        
+        Autenticação Descentralizada
+        Pode se autenticar/conectar-se cm LDAP e KERBEROS
+    
+
+> 3. Primeiro Passos
+
+> 4. Arquivo Inventory
+
+> 5. Módulo do Ansible
+
+> 6. Variaveis
+
+> 7. Playbooks
+
+> 8. Ansible Galaxy
+
+> 9. Laboratorio Final
