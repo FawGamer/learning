@@ -1,4 +1,7 @@
 Ansible
+    Comprado na Udemy em 17/06/2020
+    Iniciado curso em 17/06/2020
+    
 Terraform
 	-vpc, sg, s3, tags
 Docker

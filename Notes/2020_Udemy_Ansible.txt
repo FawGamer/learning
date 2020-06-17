@@ -59,8 +59,14 @@
         Autenticação Descentralizada
         Pode se autenticar/conectar-se cm LDAP e KERBEROS
     
+    Documentação Oficial:
+    https://docs.ansible.com/
 
 > 3. Primeiro Passos
+    Deploy de 3 maquina:
+    1. CentOS 7 Ansible Server
+    2. CentOS 7 Cliente For Workpress
+    3. Debian 9 Cliente For MariaDB
 
 > 4. Arquivo Inventory
 
