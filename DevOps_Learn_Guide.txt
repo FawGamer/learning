@@ -1,11 +1,12 @@
-Ansible
-    Comprado na Udemy em 17/06/2020
+1. Ansible
+    Comprado na Udemy por R$ 36,00 em 17/06/2020
     Iniciado curso em 17/06/2020
     
-Terraform
+2. Terraform
 	-vpc, sg, s3, tags
-Docker
 
-Prometheus
+3. Docker
 
-Kubernetes
+4. Prometheus
+
+5. Kubernetes
