@@ -1,6 +1,9 @@
 > 1. Apresentação
+    Instrutor: Phillipe Farias Costa
+    Linkedin: https://www.linkedin.com/phillipfarias
 
-> 2. Introdução a Ansible
+
+> 2. Introdução a Ansible (https://docs.ansible.com/)
     Ansible é uma forma de comunicação superlumica.
     Solução OpenSource da Red Hat desenvolvida por Michael DeHaan
         Gerenciamento de Mudança
@@ -63,11 +66,97 @@
     https://docs.ansible.com/
 
 > 3. Primeiro Passos
-    Deploy de 3 maquina:
+    Deploy de 3 maquinas:
     O.S.        Function    Service         IP              User    Password
-    CentOS 7    Server      Ansible Srv     192.168.0.60    root    password
+    CentOS 7    Server      Amaster         192.168.0.60    root    password
     CentOS 7    Cliente     Workpress       192.168.0.61    root    password
     Debian 9    Cliente     MariaDB         192.168.0.62    deploy  password
+
+    Vagrant Delivery Image VM (https://www.vagrantup.com/)
+        Procedores Alternativos
+            Google Cloud
+            AWS
+            Microsoft Azure
+            Digital Ocean
+
+        Provedores Nativos
+            Virtual Box
+            Docker
+            Microsoft Hyper-V
+            VM-Ware
+
+        Provisionadores
+            Ansible
+            Puppet Labs
+            CHEF
+            CFEngine
+            Shell Script
+    
+    No Vagrant temos o conceito de Boxes, que são pacotes em formato de ambiente Vagrant
+    Boxes oficiais: https://app.vagrant.com/boxes/search
+    Instalando um Box
+        $ vagrant init centos/7
+        $ vagrant box add debian/stretch64
+
+    Instalando o Ansible (https://docs.ansible.com/ansible/2.7/installation_guide/intro_installation.html)
+    CentOS: $ sudo yum install ansible -y
+    Debian: $ sudo apt-get install ansible -y
+
+    $ sudo yum provides pip
+    $ sudo yum install python2-pip -y
+    $ sudo apt-get install python-pip -y
+    $ sudo pip install pip --upgrade
+    $ sudo pip install ansible
+    $ sudo pip install ansible --upgrade
+
+    Configurar ansible.cfg (https://docs.ansible.com/ansible/2.4/intro_configuration.html)
+     /etc/ansible/ansible.cfg
+
+     Alterações e configurações são interpretadas respeitando a seguinte ordem:
+     -Variaveis ANSIBLE_CONFIG
+     -ansible.cfg no diretório corrente
+     - .ansible.cfg no diretório /home
+     -/etc/ansible/ansible.cfg
+
+     https://github.com/FawGamer/learning/blob/416915efa9d8cdaffc3d85797c2ecd45b1b1074a/Ansible/ansible.cfg
+
+    Linha de comando Ad-hoc (https://docs.ansible.com/ansible/latest/user_guide/intro_adhoc.html)
+    Criar a pasta Treinamento_Ansible
+    vim hosts
+    Colocar grupos e embaixo de grupos colocar o IP das maquinas que serão afetadas: 
+        [servidores_web]
+        192.168.0.61
+
+        [bd]
+        192.168.0.62
+
+    ansible [server ou group] i- [file hosts] -m [modulo]
+    -k solicita a Senha do Usuário
+    -u aponta o usuário 
+    -i aponta o arquivo de inventario
+    -a aponta o argumento (usado para rodar comandos em Linux)
+    -K solicita a senha de sudo para elevação de privigio
+    -b Executa com o super usuário
+    -m modulo
+    -v mostrando o modo verbose.
+
+
+    Exemplo de comando com modulo Ping para verificar resposta ICMP:
+    ansible 192.168.0.61 -i hosts -m ping -v
+    ansible servidores_web -i hosts -m ping -v
+    
+    Exemplo de comando com envio de comandos linux as maquinas:
+    ansible [alvo] -i [file hosts] -u [user] -k -a "[comando linux]"
+
+    Exemplo de comando com modulo Systemd:
+    ansible servidores_web -i hosts -u root -k -K -b -m systemd -a "name=sshd state=restarted"
+
+    Exemplo de comando com modulo File:
+    ansible 192.168.0.61 -i hosts -u root -k -K -b -m file -a dest="/tmp/ansible_teste mode=600 owner=root group=root"
+
+    Exemplo de comando com modulo Setup:
+    ansible 192.168.0.61 -i hosts -u root -k -K -b -m setup
+
 
 > 4. Arquivo Inventory
 
