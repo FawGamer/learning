@@ -152,13 +152,18 @@
     ansible servidores_web -i hosts -u root -k -K -b -m systemd -a "name=sshd state=restarted"
 
     Exemplo de comando com modulo File:
-    ansible 192.168.0.61 -i hosts -u root -k -K -b -m file -a dest="/tmp/ansible_teste mode=600 owner=root group=root"
+    ansible -i hosts 192.168.0.61  -u root -k -K -b -m file -a dest="/tmp/ansible_teste mode=600 owner=root group=root"
 
     Exemplo de comando com modulo Setup:
-    ansible 192.168.0.61 -i hosts -u root -k -K -b -m setup
+    ansible -i hosts 192.168.0.61 -u root -k -K -b -m setup
 
 
-> 4. Arquivo Inventory
+> 4. Arquivo Inventory (https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html)
+    Path Default: /etc/ansible/hosts
+    se eu quiser colocar um arquivo customizado devo apontar o mesmo conforme exemplo abaixo:
+    ansible [ip host ou group] -i [inventory] ...
+
+
 
 > 5. Módulo do Ansible
 
