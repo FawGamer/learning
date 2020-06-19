@@ -1,0 +1,23 @@
+ [servidores_web]
+    www ansible_ssh_host=192.168.0.61
+
+ [servidores_web:vars]
+    ansible_ssh_port=22
+    ansible_ssh_user=root
+    ansible_ssh_pass=password
+    ansible_become=yes
+    ansible_become_user=root
+    ansible_become_pass=password
+    ansible_connection=ssh    
+
+[servidores_db]
+    mysql  ansible_ssh_host=192.168.8.62
+
+[servidores_db:vars]
+    ansible_ssh_port=22
+    ansible_ssh_user=root
+    ansible_ssh_pass=password
+    ansible_become=yes
+    ansible_become_user=root
+    ansible_become_pass=password
+    ansible_connection=ssh

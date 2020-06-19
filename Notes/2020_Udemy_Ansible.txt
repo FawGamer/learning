@@ -163,9 +163,48 @@
     se eu quiser colocar um arquivo customizado devo apontar o mesmo conforme exemplo abaixo:
     ansible [ip host ou group] -i [inventory] ...
 
+    Metodo
+    No arquivo hosts é onde ele recebe todo o pool de maquinas ao qual executara as linhas de comando definidas na tarefa.
+    Para iniciar a explicação, neste arquivo "hosts" é registrado por grupos e através deste arquivo conseguimos fazer algumas definições de como o ansible pode se conectar a maquina.
+
+    Tipos  de criação de groups no arquivo hosts desejado.
+        [servidores_web]
+        xxx.xxx.xxx.xxx
+
+        [servidores_storage]
+        xxx.xxx.xxx.xxx
+
+        [servidores:children]
+        servidores_web
+        servidores_storage
 
 
-> 5. Módulo do Ansible
+
+    Exemplo de comando usando para conectar a maquina diretamente:
+    [Hostname] ansible_ssh_host=[IP ADDRESS] ansible_ssh_user=[USER]] ansible_ssh_pass=[SENHA]
+
+    Elevando a linhas do Hosts a um metodo usando elevando SUDO no usuário:
+    [Hostname] ansible_ssh_host=[IP ADDRESS] ansible_ssh_user=[USER]] ansible_ssh_pass=[SENHA] ansible_become=yes ansible_become_method=sudo ansible_become_user=[user sudo] ansible_become_pass=[senha de sudo]
+
+    [Hostname] ansible_ssh_host=[IP ADDRESS] ansible_ssh_user=[USER]] ansible_ssh_pass=[SENHA] ansible_become=yes ansible_become_method=sudo ansible_become_user=[user sudo] ansible_become_pass=[senha de sudo] ansible_shell_executable=[Shell a ser usado]
+    wordpress ansible_ssh_host=192.168.0.61 ansible_ssh_user=root ansible_ssh_pass=password ansible_become=yes ansible_become_method=sudo ansible_become_user=root ansible_become_pass=password ansible_shell_executable=/bin/bash
+
+    Trabalhando com Variaveis
+    Criar no hosts o grupo nome:vars 
+    [servidores_web]
+        www ansible_ssh_host=192.168.0.61
+
+    [servidores_web:vars]
+        ansible_ssh_port=22
+        ansible_ssh_user=root
+        ansible_ssh_pass=password
+        ansible_become=yes
+        ansible_become_user=root
+        ansible_become_pass=password
+        ansible_connection=ssh    
+
+> 5. Roles & Task (https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#roles)
+    
 
 > 6. Variaveis
 
