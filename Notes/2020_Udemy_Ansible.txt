@@ -189,7 +189,7 @@
     [Hostname] ansible_ssh_host=[IP ADDRESS] ansible_ssh_user=[USER]] ansible_ssh_pass=[SENHA] ansible_become=yes ansible_become_method=sudo ansible_become_user=[user sudo] ansible_become_pass=[senha de sudo] ansible_shell_executable=[Shell a ser usado]
     wordpress ansible_ssh_host=192.168.0.61 ansible_ssh_user=root ansible_ssh_pass=password ansible_become=yes ansible_become_method=sudo ansible_become_user=root ansible_become_pass=password ansible_shell_executable=/bin/bash
 
-    Trabalhando com Variaveis
+    Trabalhando com Variaveis (https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html)
     Criar no hosts o grupo nome:vars 
     [servidores_web]
         www ansible_ssh_host=192.168.0.61
@@ -204,7 +204,48 @@
         ansible_connection=ssh    
 
 > 5. Roles & Task (https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#roles)
+    Roles são um conjunto de itens independentes destinados a provisionar uma determinada aplicação/infraestrutura;
+    Segue uma estrutura de diretorio e estrutura padrão:
+    Playbook.yml 
+    roles/
+        common/
+            tasks/
+            handlers/
+            files/
+            templates/
+            vars/
+            defaults/
+            meta/
     
+    Criando repositorio Ansible para Roles:
+    # mkdir treinamento/common/{tasks, handlers,files,templates,vars,defaults,meta} -p
+
+    Qual a função de cada diretorio criado:
+    tasks: Lista de tarefas para serem executadas dentro de uma role. 
+    handlers: são manipuladores/eventos acionados por uma task.
+    files: arquivos utilizados para deploy dentro de uma role.
+    templates: modelos para deploy dentro de uma rede (permite o uso de variaveis).
+    vars: variaveis adicionais de uma role.
+    defaults: variaveis padrão de um role, executadas sempre com prioridade máxima.
+    meta: trata depedencias de uma role por outra role - primeiro diretorio a ser analisado.
+
+    Nota: dentro dos diretorios acima, com exeção do "templates", deve existir um arquivo chamado main.yml para que seja devidamente interpretado pelo ansible.
+
+    O caminho tradicional para utilização de uma role pode ser definido basicamente por:
+        ---
+            -hosts: [group]
+            roles:
+                -common
+                -nginx
+                -php 
+                -mysql
+    Nota: o que  determina a execução de uma role são as tasks, cadastradas no arquivo tasks/main.yml
+    
+     
+
+
+
+
 
 > 6. Variaveis
 
