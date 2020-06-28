@@ -1,0 +1,14 @@
+# Exemplos
+# [Nome do Grupo]
+# IP ADDRESS DO HOST ALVO
+# HOSTNAME ansible_ssh_host=[IP ADDRESS] ansible_ssh_user=[USER] ansible_ssh_pass=[PASSWORD USER]
+
+[www]
+192.168.0.61
+wordpress ansible_ssh_host=192.168.0.61 ansible_ssh_user=root ansible_ssh_pass=password
+
+[database]
+192.168.0.62
+database1 ansible_ssh_host=192.168.0.62 ansible_ssh_user=root ansible_ssh_pass=password
+
+

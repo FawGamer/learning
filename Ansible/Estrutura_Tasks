@@ -1,0 +1,42 @@
+---
+# Roda atualização do sistema
+- name: System Operation Update
+  yum: name=* state=latest update_cache=yes
+
+# Roda instalação de pacotes definidos
+- name: Package Essentials Install
+  yum:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+      packages:
+      - net-tools
+      - vim
+      - dkms
+      - wget
+      - git
+      - epel-release
+      - ipa-client
+      - dialog
+      - tar
+      - unzip
+      - gcc
+      - cockpit
+
+# Roda a configuração da Timezone
+- name: American Timezone Setup
+  file: src=/usr/share/zoneinfo/America/Sao_Paulo dest=/etc/localtime state=link force=yes
+
+# Roda copia de arquivo da pasta "files" para a maquina alvo.
+- name: Copy file
+  copy: src=/fonts.zip dest=/tmp/fonts.zip
+  
+# Copiando um template
+- name: Template Copy
+  template: src=motd dest=/etc/motd force=yes owner=root group=root
+
+# Instalação de nginx
+- name: Setup Nginx
+  yum: name=nginx state=latest update_cache=yes
+
+...

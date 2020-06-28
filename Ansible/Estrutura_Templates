@@ -1,0 +1,10 @@
+--------------------------------------------------
+                Seja Bem vindo!
+
+Voce esta conectado no servidor: "{{ ansible_fqdn }}"
+Instalado por Raphael Maria
+
+Sistema Operacional: "{{ansible_distribution}}"
+Versão: "{{ansible_distribution_version}}"
+---------------------------------------------------
+

@@ -1,0 +1,19 @@
+# localizado na Pasta ROOT
+
+/
+    folder: ansible
+        folder: group_vars
+                file: groups
+        file: hosts
+        file: playbook.yml
+        folder: roles
+            folder: common
+                file: defaults
+                folder: files
+                folder: handlers
+                folder: meta
+                folder: tasks
+                    file: main.yml
+                folder: templates
+                folder: vars
+        

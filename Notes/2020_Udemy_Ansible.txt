@@ -265,7 +265,7 @@
         ansible_become_pass=password
         ansible_connection=ssh    
 
-> 5. Roles & Task (https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#roles)
+> 5. Roles (https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#roles)
     Roles são um conjunto de itens independentes destinados a provisionar uma determinada aplicação/infraestrutura;
     Segue uma estrutura de diretorio e estrutura padrão:
     Playbook.yml 
@@ -280,7 +280,7 @@
             meta/
     
     Criando repositorio Ansible para Roles:
-    # mkdir treinamento/common/{tasks, handlers,files,templates,vars,defaults,meta} -p
+    # mkdir /ansible/roles/common/{tasks,handlers,files,templates,vars,defaults,meta} -p
 
     Qual a função de cada diretorio criado:
     tasks: Lista de tarefas para serem executadas dentro de uma role. 
@@ -302,6 +302,7 @@
                 -php 
                 -mysql
     Nota: o que  determina a execução de uma role são as tasks, cadastradas no arquivo tasks/main.yml
+   
     
 > 6. Variaveis (https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html)
      
@@ -499,7 +500,8 @@
     http://www.networkcomputing.com/unixworld/tutorial/009/009.part1.html
 
     Criar de setup de vimrc
-        cat << EOF | tee -a ./vimrc 
+
+    cat << EOF | tee -a ./vimrc 
         syntax on                   " modo visual/colorido ativo
         set number                  " ativa a numeração das linhas
         set showmode                " apresenta o modo de utilização atual (command/insert)
@@ -521,10 +523,14 @@
         set smartindent             " identação
         set softtabstop=2           " tabulação
         set undolevels=1000         " número máximo de restore (undo)
-        EOF
+    EOF
 
     Modulos do Ansible (https://docs.ansible.com/ansible/latest/modules/modules_by_category.html)
 
+> 9. Tasks
+ handlers
+    Diretorio que trabalha com ações posteriores apos uma determinada tarefa
+    Em vez de criar a tarefa pode ser configurado um handler para iniciar a tarefa
 
 > 9. Playbooks
 

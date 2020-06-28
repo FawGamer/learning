@@ -1,0 +1,18 @@
+# Criar pasta group_vars/[nome do grupo alvo]
+## ansible_ssh_port: [PORT]
+## ansible_ssh_user: [USER NORMAL]
+## ansible_ssh_pass: [SENHA NORMAL]
+## ansible_become: yes
+## ansible_become_method: sudo
+## ansible_become_user: [USER ROOT]
+## ansible_become_pass: [PASS ROOT]
+## ansible_connection: [PROTOCOL]
+
+ansible_ssh_port: 22
+ansible_ssh_user: [raphael]
+ansible_ssh_pass: [mudar@123]
+ansible_become: yes
+ansible_become_method: sudo
+ansible_become_user: root
+ansible_become_pass: password
+ansible_connection: ssh
