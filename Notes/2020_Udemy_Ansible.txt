@@ -539,6 +539,6 @@
 > 11. Laboratorio Final
 
 > Extras
-    Instalar servidor Ansible AWX no CentOS 8
+    Instalar servidor Ansible AWX no Cenvim tOS 8
     https://www.linkedin.com/pulse/construindo-ansible-awx-tower-com-docker-braier-alves/?trackingId=1z8qOhUASP9LI1Z3UAAyzQ%3D%3D
     
