@@ -104,9 +104,9 @@
     $ sudo yum provides pip
     $ sudo yum install python2-pip -y
     $ sudo apt-get install python-pip -y
-    $ sudo pip install pip --upgrade
-    $ sudo pip install ansible
-    $ sudo pip install ansible --upgrade
+    $ sudo pip2 install pip --upgrade
+    $ sudo pip2 install ansible
+    $ sudo pip2 install ansible --upgrade
 
     Configurar ansible.cfg (https://docs.ansible.com/ansible/2.4/intro_configuration.html)
      /etc/ansible/ansible.cfg
