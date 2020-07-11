@@ -1,0 +1,12 @@
+Comando de Ansible via AD-HOC
+
+ansible -i hosts [ip/grupo] -u [user] -k -m [selecionar o modulo]
+ansible -i hosts [ip/grupo] -u [user] -k -a ["comandos"]
+ansible -i hosts [ip/grupo] -u [user] -k -m [selecionar o modulo] >> arquivo.txt
+
+
+Comando de Ansible via Playbook
+
+ansible-playbook -i hosts [ip/grupo] arquivo.yml
+
+

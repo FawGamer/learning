@@ -532,6 +532,15 @@
     Diretorio que trabalha com ações posteriores apos uma determinada tarefa
     Em vez de criar a tarefa pode ser configurado um handler para iniciar a tarefa
 
+    Exemplo:
+    ---
+    - name: reiniciando nginx
+      systemd: state=restart enabled=yes daemon_reload=yes name=nginx
+    ...
+
+> 10. Meta
+    
+
 > 9. Playbooks
 
 > 10. Ansible Galaxy
