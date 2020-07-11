@@ -539,7 +539,11 @@
     ...
 
 > 10. Meta
-    
+
+> 11. Condiçoes
+    Condições são definidas pelo comando.
+    Exemplo:
+        
 
 > 9. Playbooks
 

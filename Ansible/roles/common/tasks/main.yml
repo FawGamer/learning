@@ -21,7 +21,6 @@
         - tar
         - unzip
         - gcc
-        - cockpit
 
 # Configurar Timezone para Sao Paulo
 - name: Configurando Timezone para Sao Paulo
@@ -30,5 +29,14 @@
 # Copiando o Templates
 - name: Configurando Tela de Bem Vindo
   template: src=motd dest=/etc/motd force=yes owner=root group=root
+
+# Instalando Epel CentOS
+- name: Instalando Epel-Release
+  yum: name=epel-release state=latest
+
+# Instalando Cockpit
+- name: Instalando Cockpit
+  yum: name=cockpit state=latest
+  notify: reiniciar cockpit
 
 ...

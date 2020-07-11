@@ -3,4 +3,5 @@
   roles:
     - php
     - common
+    - updateos
     #- myslq
