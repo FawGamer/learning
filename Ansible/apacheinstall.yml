@@ -1,0 +1,25 @@
+---
+- hosts: www
+  tasks:
+    #Tarefa #1 
+    - name: Instalacao do APACHE
+      yum: httpd
+      state: latest
+    notify: restart apache
+# Tarefe #2
+#    - name: Instalacao do APACHE
+#      yum: httpd
+#      state: latest
+#    notify: restart apache
+
+    handlers:
+    - name: restart apache
+      systemd:
+        name: httpd
+        state: restarted
+#    - name: restart apache
+#      systemd:
+#        name: httpd
+#        state: restarted
+  
+...
