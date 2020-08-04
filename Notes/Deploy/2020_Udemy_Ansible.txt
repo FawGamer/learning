@@ -551,7 +551,10 @@
     ansible-playbook -i hosts apacheinstall.yml --syntax-check
     ansible-playbook -i hosts apacheinstall.yml -C
 
+> 10. Targets Microsoft Windows
+    10.1 Introdução (https://docs.ansible.com/ansible/latest/user_guide/windows.html)
 
+    10.2
 
 
 > 10. Ansible Galaxy
