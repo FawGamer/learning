@@ -10,8 +10,10 @@
             folder: common
                 file: defaults
                 folder: files
+                    file: [o quanto desajavel]
                 folder: handlers
                 folder: meta
+                    file: main.yml
                 folder: tasks
                     file: main.yml
                 folder: templates
