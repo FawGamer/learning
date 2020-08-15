@@ -95,7 +95,16 @@ AWS na Prática
             
 > Modulo 03 - Networking na AWS
     VPC - Virtual Private Cloud
-    
+        Habilita recursos da AWS dentro de uma rede virtual.
+        Principais recursos de VPC
+            - Route Table
+            - Internet Gateway - Acesso a Internet
+            - VPG (virtual private gateway) - acesso ao ambiente On-Promisse
+            - NAT Gateway (ou NAT Instance) - Fornece acesso à internet para instancia, mesmo que elas não tenha endereço IP Publico.
+            - Security Groups - Fornece controle do trafego inbound e outbound
+            - Network Access Control List - controla (allow/deny) o trafego de entrada e saida de uma subnet.
+    Subnet
+        
 
 
 > Modulo 04 - Elastic Compute Cloud (EC2)

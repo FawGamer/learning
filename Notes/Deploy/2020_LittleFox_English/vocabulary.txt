@@ -33,7 +33,7 @@ buy = compra
 store = loja
 backyard = Jardins dos Fundos
 Deadline = Prazo final
-
+drank - bebe (passado)
 
 - Um só significado
     There was (der uos) = foi
@@ -52,5 +52,14 @@ Deadline = Prazo final
 
 
 15 de Agosto de 2020
--
--
+-instead: ao inves de
+-hear: escutar
+-judge: Juiz de Lei
+-referee: juiz de esporte
+-throat: garganta
+-shove: enfiar/empurrar 
+-push: empurrar
+-pull: puxar
+-him: 
+-grades: notas
+-improving: 
