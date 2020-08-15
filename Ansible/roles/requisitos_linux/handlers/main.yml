@@ -1,0 +1,7 @@
+---
+    - name: cockpit
+      systemd: state=restart enabled=yes daemon_reload=yes name=cockpit
+
+    - name: reiniciar zabbix-agent
+      systemd: state=restart enabled=yes daemon_reload=yes name=zabbix-agent
+...

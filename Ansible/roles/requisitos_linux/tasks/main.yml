@@ -1,0 +1,80 @@
+- name: Remove Old Softwares - For Redhat Release
+  yum:
+    name: '*'
+    state: absent
+  when: ansible_distribution == "CentOS" or ansible_distribution == "RedHat"
+
+  - name: Remove Old Softwares - For Debian Release
+  apt:
+    name: '*'
+    state: absent
+  when: ansible_distribution == "Debian" or ansible_distribution == "Ubuntu"
+
+- name: Install Essentials Softwares - For RedHat Release
+  yum:
+    name: "{{ requisitos }}"
+    state: latest
+  vars:
+    requisitos:
+        - htop
+        - net-tools
+        - mdadm
+        - vim
+        - git
+        - wget
+        - tar
+        - unzip
+        - cockpit
+        - gcc
+        - epel-release
+        - gparted
+  when: ansible_distribution == "CentOS" or ansible_distribution == "RedHat"
+  notify: cockpit
+  register: result_redhat
+
+- name: Install Essentials Softwares - For Debian Release
+  apt:
+    name: "{{ requisitos }}"
+    state: latest
+  vars:
+    requisitos:
+        - htop
+        - net-tools
+        - mdadm
+        - vim
+        - git
+        - wget
+        - tar
+        - unzip
+        - cockpit
+        - gcc
+        - gparted
+  when: ansible_distribution == "Debian" or ansible_distribution == "Ubuntu"
+  notify: cockpit
+  register: result_debian
+
+- name: Creating Directory Ansible Defaults
+  file:
+    path: /DevOps
+    state: directory
+    mode: '0755'
+
+- name: Creating Directory Scripts
+  file:
+    path: /DevOps/Scripts
+    state: directory
+    mode: '0755'
+
+- name: Copy Zabbix Agent Install 
+  copy: src=[script].sh dest=/DevOps/Scripts
+
+- name: Run Install Zabbix Agent - For Redhat Release
+  command: /DevOps/Scripts/zabbix-agent_CentOS.sh
+  when: ansible_distribution == "CentOS" or ansible_distribution == "RedHat"
+  notify: zabbix-agent
+
+- name: Run Install Zabbix Agent - For Debian Release
+  command: /DevOps/Scripts/zabbix-agent_Debian.sh
+  when: ansible_distribution == "Debian" or ansible_distribution == "Ubuntu"
+  notify: zabbix-agent
+
