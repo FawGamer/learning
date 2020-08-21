@@ -554,8 +554,25 @@
 > 10. Targets Microsoft Windows
     10.1 Introdução (https://docs.ansible.com/ansible/latest/user_guide/windows.html)
 
-    10.2
+    10.2 Autenticação (https://docs.ansible.com/ansible/latest/user_guide/windows_winrm.html#authentication-options)
+    Forma Basic
+    ansible_user: suporte
+    ansible_password: O22013Win
+    ansible_connection: winrc
+    ansible_winrm_transport: basic
 
+    Forma Certificado:
+    Set-Item -Path WSMan:\localhost\Service\Auth\Certificate -Value $true
+
+    ansible_connection: winrm
+    ansible_winrm_cert_pem: /path/to/certificate/public/key.pem
+    ansible_winrm_cert_key_pem:/path/to/certificate/private/key.pem
+    ansible_winrm_transport: certificate 
+
+    
+
+
+    10.3
 
 > 10. Ansible Galaxy
 
