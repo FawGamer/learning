@@ -556,6 +556,8 @@
 
     10.2 Autenticação (https://docs.ansible.com/ansible/latest/user_guide/windows_winrm.html#authentication-options)
     Forma Basic
+
+    Exemplo de declaração:
     ansible_user: suporte
     ansible_password: O22013Win
     ansible_connection: winrc
@@ -564,15 +566,31 @@
     Forma Certificado:
     Set-Item -Path WSMan:\localhost\Service\Auth\Certificate -Value $true
 
+    Exemplo de declaração:
     ansible_connection: winrm
     ansible_winrm_cert_pem: /path/to/certificate/public/key.pem
     ansible_winrm_cert_key_pem:/path/to/certificate/private/key.pem
     ansible_winrm_transport: certificate 
 
+    Forma NTLM:
+    Habilitado por padrão em maquinas windows
+
+    Exemplo de Declaração:    
+    ansible_user: LocalUsername
+    ansible_password: Password
+    ansible_connection: winrm
+    ansible_winrm_transport: ntlm
+
+    Forma Kerberos (FORMA SEGURA E RECOMENDADA):
+
+    Exemplo de Declaração:
+    ansible_user: user@MY.DOMAIN.Com
+    ansible_password: Password
+    ansible_connection: winrm
+    ansible_winrm_transport: kerberos
+
+    10.3 - Configurando Ambiente para Alvos Microsoft:
     
-
-
-    10.3
 
 > 10. Ansible Galaxy
 
