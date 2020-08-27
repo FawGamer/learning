@@ -591,6 +591,26 @@
 
     10.3 - Configurando Ambiente para Alvos Microsoft:
     
+    Preparação:
+        Nas maquinas windows deve executar os Scripts presentes no GIT nas maquinas Windows Server
+        Nas maquina linux Ansible Master deve executar o comando:
+    
+        sudo pip install "pywinrm>=0.3.0"
+
+    Ad-Hoc para Windows com autenticação básica:
+    ansible -i [Inventory] [alvo] -m win_ping
+
+    Inventory
+        [IP ADDRESS] ansible_user=administrator ansible_winrm_pass="SENHA"
+    
+    Group_vars/windows
+        ansible_port: 5986
+        ansible_connection: winrm
+        ansible_winrm_server_cert_validation: ignore
+
+    Ad-Hoc para Windows com Autenticação via Dominio:
+        
+
 
 > 10. Ansible Galaxy
 
