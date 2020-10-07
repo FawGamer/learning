@@ -1,0 +1,32 @@
+---
+# tasks file for roles/common_ex2
+- name: RAPHAEL | Add Motd
+  template: src=motd.sh dest=/etc/motd.sh force=yes owner=root group=root mode=0755
+
+- name: RAPHAEL | Change /etc/profile
+  lineinfo: dest=/etc/profile line={{ item }}
+  with_items:
+    - '#--- Default export & Alias ---#'
+    - 'export HISTTIMEFORMAT="%d/%m/%Y - %H:%M:%S - "'
+    - 'export HISTSIZE="5000"'
+    - 'export HISTFILESIZE="5000"'
+    - 'export TERM=linux'
+    - 'export ls="ls =lh --color"'
+    - 'export grep="grep --color" '
+    - 'export rm="rm -i"'
+
+- name: RAPHAEL | Disable SELINUX (Temp)
+  selinux: state=disabled
+  when: ansible_distribution == "CentOS" or ansible_distribution == "RedHat"
+
+- name: RAPHAEL | Disable SELINUX (Permanent)
+  replace:
+    dest=/etc/selinux/config
+    regexp="SELINUX=enforcing"
+    replace="SELINUX=disabled"
+  when: ansible_distribution == "CentOS" or ansible-distribution == "RedHat"
+
+- name: RAPHAEL | Install Epel Repository
+  yum: name=epel-release state=latest
+  when: ansible_dsitribution == "CentOS" or ansible_distribution == "RedHat"
+  
