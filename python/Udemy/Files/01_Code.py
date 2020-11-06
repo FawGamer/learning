@@ -1,6 +1,5 @@
 print ("Welcome!")
-g = input("Escolha um numero: ")
-guess = int(g)
+guess = (input("Escolha um numero: "))
 if guess == 5:
     print ("Você acertou!")
 else:
